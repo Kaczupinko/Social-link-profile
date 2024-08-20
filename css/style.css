@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/static/Inter-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/static/Inter-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/static/Inter-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/static/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+      /* Colors */
+    --grey-900: #141414;
+    --grey-800: #1F1F1F;
+    --grey-700:  #333333;
+    --green: #C4F82A;
+    --white: #FFFFFF;
+    --black: #111;
+
+    /* Text Preset 1 */
+    --text-preset-1-size: 2.4rem; /* 24px */
+    --text-preset-1-line-height: 1.5; /* 150% */
+    --text-preset-1-font-weight: 800; /* Extra Bold */
+    --text-preset-1-letter-spacing: 0rem; /* 0px */
+
+    /* Text Preset 2 */
+    --text-preset-2-size: 1.6rem; /* 16px */
+    --text-preset-2-line-height: 1.5; /* 150% */
+    --text-preset-2-font-weight: 500; /* Medium */
+    --text-preset-2-letter-spacing: 0rem; /* 0px */
+
+    /* Text Preset 3 */
+    --text-preset-3-size: 1.4rem; /* 14px */
+    --text-preset-3-line-height: 1.5; /* 150% */
+    --text-preset-3-font-weight: 700; /* Bold */
+    --text-preset-3-letter-spacing: 0rem; /* 0px */
+
+    
+    /* Spacing */
+    --Spacing-500: 40px;
+    --Spacing-300: 24px;
+    --Spacing-200: 16px;
+    --Spacing-150: 12px;
+    --Spacing-100: 8px;
+    --Spacing-50: 4px;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F4D04E;
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
