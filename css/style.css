@@ -69,7 +69,7 @@
 }
 
 body {
-    background-color: #F4D04E;
+    background-color: var(--grey-900);
     font-family: 'Inter', sans-serif;
     font-size: 10px;
 }
@@ -80,4 +80,151 @@ body {
     justify-content: center;
     min-height: 100vh;
     align-items: center;
+}
+
+.card {
+    display: flex;
+    max-width: 38.4rem;
+    padding: var(--Spacing-500);
+    flex-direction: column;
+    align-items: center;
+    gap: var(--Spacing-300);
+    border-radius: 1.2rem;
+    background-color: var(--grey-800);
+}
+
+img {
+    width: 88px;
+    height: 88px;
+    border-radius: 5rem;
+    background: url(../assets/images/avatar-jessica.jpeg) lightgray 50% / cover no-repeat
+}
+
+header {
+    flex: inherit;
+    flex-direction: inherit;
+    align-items: center;
+    gap: var(--Spacing-50);
+    align-self: stretch;
+}
+
+h1 {
+    margin: 0;
+    color: var(--white);
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: var(--text-preset-1-line-height);
+    align-self: stretch;
+}
+header>p {
+    margin: 0;
+    color: var(--green);
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: var(--text-preset-2-line-height);
+    align-self: stretch;
+}
+.card>p {
+    margin: 0;
+    color: var(--white);
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    opacity: 70%;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-200, 16px);
+    align-self: stretch;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    display: flex;
+    padding: var(--spacing-150, 12px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-100, 8px);
+    align-self: stretch;
+    border-radius: 8px;
+    width: 300px;
+    background: var(--grey-700, #333);
+    cursor: pointer;
+    transition: all background-color 0.3 ease;
+}
+
+li:hover {
+    background-color: var(--green);
+}
+
+li:hover a {
+    color: var(--black, #000);
+}
+
+a {
+    color: var(--white, #FFF);
+    font-family: Inter;
+    font-size: var(--font-size-text-preset-2, 14px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    align-items: stretch;
+    cursor: hand;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: var(--green);
+    color: var(--black);
+}
+
+
+.attribution {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 11px;
+    color: var(--white);
+}
+
+.attribution>a {
+    font-size: 12px;
+}
+
+@media (max-width: 375px) {
+    .card {
+        width: 327px;
+        padding: var(--Spacing-300);
+        gap: var(--Spacing-300);
+    }
+
+    ul {
+        gap: var(--Spacing-200);
+    }
+    li {
+        width: 100%;
+
+    }
+
+    .attribution {
+        font-size: 10px;
+    }
+
+    .attribution>a {
+        font-size: 10px;
+    }
 }
